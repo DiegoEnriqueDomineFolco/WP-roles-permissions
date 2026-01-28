@@ -1,0 +1,36 @@
+/* Oculta el menú de Elementor en la barra superior en todos los contextos 
+y todo lo demas necesario*/
+
+#wp-admin-bar-elementor_edit_page,
+#wp-admin-bar-edit,
+div.hostinger-onboarding-reminder,
+#edit-slug-buttons,
+#elementor-switch-mode-button,
+#yoast-seo-publishbox-section,
+#content-html,
+#excerpt-html,
+#acf_content-html,
+/* label for="_virtual" class="show_if_simple tips has-checkbox", */
+label[for="_virtual"].show_if_simple.tips.has-checkbox,
+label[for="_downloadable"].show_if_simple.tips.has-checkbox,
+/* <li class="yoast_tab_options yoast_tab_tab yoast-seo"> */
+li.yoast_tab_options.yoast_tab_tab.yoast-seo,
+/* <li class="labels_options labels_tab woocommerce_advanced_product_labels"> */
+li.labels_options.labels_tab.woocommerce_advanced_product_labels,
+#wpseo_meta,
+#slugdiv,
+#tagsdiv-product_tag,
+#berocket-tab-child,
+#joinchat,
+#pageparentdiv,
+#litespeed_meta_boxes,
+/*<li> <a href="edit-tags.php?taxonomy=product_cat&amp;post_type=product">Categorías</a> */
+#menu-posts-product ul li a[href*="edit-tags.php?taxonomy=product_cat&post_type=product"],
+#menu-posts-product ul li a[href*="edit-tags.php?taxonomy=product_tag&post_type=product"]
+{
+    display: none !important;
+    visibility: hidden !important;
+    max-height: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}
